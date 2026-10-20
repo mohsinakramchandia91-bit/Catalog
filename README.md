@@ -28,4 +28,4 @@ To add a product: duplicate a `.card` block in `index.html`, drop its cover imag
 - `assets/` — product cover images and site assets
 
 ---
-**Built by Muhammad Mohsin — Onyx AI** · [YouTube](https://www.youtube.com/@onyxaipk) · [All products](https://mohsina91.gumroad.com) · [Catalog](https://onyxailabs.github.io/Catalog/)
+**Built by Muhammad Mohsin — Onyx AI** · [YouTube](https://www.youtube.com/@onyxaipk) · [All products](https://onyxailabs.gumroad.com) · [Catalog](https://onyxailabs.github.io/Catalog/)
