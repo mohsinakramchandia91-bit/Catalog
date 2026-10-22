@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YouTube Competitor Analysis — Compare Channels Side by Side</title>
+<meta name="description" content="Compare any two YouTube channels side by side — upload cadence, average views, breakout videos and title patterns — with OnyxIQ's Competitor Compare. Learn what your niche rewards. Start free.">
+<link rel="canonical" href="https://onyxailabs.github.io/Catalog/onyxiq/youtube-competitor-analysis/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OnyxIQ">
+<meta property="og:title" content="YouTube Competitor Analysis — Competitor Compare by OnyxIQ">
+<meta property="og:description" content="Two channels, one view: cadence, averages, top videos and title patterns — from public data via the official API.">
+<meta property="og:url" content="https://onyxailabs.github.io/Catalog/onyxiq/youtube-competitor-analysis/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="YouTube Competitor Analysis — Competitor Compare by OnyxIQ">
+<meta name="twitter:description" content="See exactly what separates you from the channel ahead of you — and what to borrow, honestly. Start free.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='12' y='12' width='24' height='24' rx='3' transform='rotate(45 24 24)' fill='none' stroke='%23e3a008' stroke-width='4'/%3E%3Crect x='19' y='19' width='10' height='10' rx='1.5' transform='rotate(45 24 24)' fill='%23e3a008'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a0e13">
+<style>
+:root{--bg:#0a0e13;--panel:#12171f;--ink:#ece9e2;--muted:#9aa4ae;--gold:#e3a008;--gold2:#f6c453;--line:#242c38}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--gold2)}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px 10px}
+header{border-bottom:1px solid var(--line)}
+.header-in{max-width:880px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:12px}
+.brand{text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}
+.brand .mark{width:34px;height:34px;flex:none}
+.brand-name{font-weight:800;font-size:21px;letter-spacing:.4px;line-height:1.15}
+.brand-name span{color:var(--gold)}
+.brand small{display:block;color:var(--muted);font-size:11.5px;font-weight:400}
+.pill{margin-left:auto;color:var(--muted);font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:5px 12px;white-space:nowrap}
+.breadcrumb{font-size:13px;color:var(--muted);margin:18px 0 10px}
+.breadcrumb a{color:var(--muted)}
+h1{font-size:33px;line-height:1.2;margin:6px 0 12px}
+.lede{font-size:18px;color:#cfd4da;margin:0 0 8px}
+h2{font-size:23px;margin:34px 0 10px}
+h2 .gold,.gold{color:var(--gold)}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:6px 0}
+.cta{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:18px 20px;margin:26px 0}
+.cta p{margin:4px 0 12px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:11px 20px;margin:4px 10px 4px 0}
+.btn-gold{background:var(--gold);color:#161006}
+.btn-ghost{border:1px solid var(--gold);color:var(--gold2)}
+.faq-item{border-top:1px solid var(--line);padding:12px 0}
+.faq-q{font-size:17px;margin:0 0 4px}
+.faq-a{color:#cfd4da;margin:0}
+.note{background:#171208;border:1px solid #3a2c07;border-radius:10px;padding:14px 18px;margin:22px 0}
+footer{border-top:1px solid var(--line);margin-top:44px}
+.footer-in{max-width:880px;margin:0 auto;padding:22px 20px 4px;color:var(--muted);font-size:14px}
+.site-nav{max-width:880px;margin:0 auto;padding:6px 20px 30px}
+.site-nav ul{list-style:none;padding:0;margin:8px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:4px 18px}
+.site-nav li{margin:3px 0;font-size:14.5px}
+@media(max-width:560px){h1{font-size:27px}.pill{display:none}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "@id": "https://onyxailabs.github.io/Catalog/onyxiq/youtube-competitor-analysis/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What can competitor analysis actually tell me?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The public mechanics of a channel's success: how often they upload, what an average video earns them, which videos broke out and what those videos have in common — topics, title constructions, lengths — and where the gaps are that nobody in the niche is serving. It turns 'they're just better' into a list of observable choices." }
+        },
+        {
+          "@type": "Question",
+          "name": "Which channels should I compare?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Two kinds: channels one step ahead of you in your niche (close enough that their playbook is realistic for you) and the niche leader (to see where the ceiling is). Comparing yourself only with the biggest channel in the niche mostly produces despair, not decisions." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this just copying competitors?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No — and it shouldn't become that. Analysis shows you the patterns a niche rewards: the questions viewers want answered, the title shapes that earn clicks, the cadence that sustains growth. You still make your own videos with your own voice. Borrow the map, not the territory." }
+        },
+        {
+          "@type": "Question",
+          "name": "What data does Competitor Compare use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Public channel and video data from the official YouTube Data API v3 — uploads, view counts, titles, publish dates. Private numbers (a rival's revenue, retention, traffic sources) are not public and no legitimate tool can show them to you." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "OnyxIQ", "item": "https://onyxailabs.github.io/Catalog/onyxiq/" },
+        { "@type": "ListItem", "position": 2, "name": "YouTube Competitor Analysis", "item": "https://onyxailabs.github.io/Catalog/onyxiq/youtube-competitor-analysis/" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="header-in">
+    <a class="brand" href="../">
+      <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="11" y="11" width="26" height="26" rx="3.5" transform="rotate(45 24 24)" stroke="#e3a008" stroke-width="3.4"/><rect x="18.5" y="18.5" width="11" height="11" rx="1.6" transform="rotate(45 24 24)" fill="#e3a008"/></svg>
+      <div><div class="brand-name">ONYX<span>IQ</span></div><small>by Onyx AI Labs</small></div>
+    </a>
+    <span class="pill">Pay once · No subscription</span>
+  </div>
+</header>
+<div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">OnyxIQ</a> › <span aria-current="page">YouTube Competitor Analysis</span></nav>
+<main>
+  <h1>YouTube Competitor Analysis: <span class="gold">See the Gap, Then Close It</span></h1>
+  <p class="lede">Every niche has a channel one step ahead of you, and the distance between you is rarely talent — it's a handful of repeatable choices. Competitor analysis makes those choices visible. OnyxIQ's Competitor Compare puts any two channels side by side using public data from the official YouTube API: cadence, averages, breakout videos and the title patterns behind them.</p>
+
+  <div class="cta">
+    <p><b>Compare your channel free</b> — start with OnyxIQ Basic. Prime ($49 once) unlocks the full comparison workflow.</p>
+    <a class="btn btn-gold" href="https://onyxailabs.gumroad.com/l/onyxiq-basic">Start free — OnyxIQ Basic</a>
+    <a class="btn btn-ghost" href="https://onyxailabs.gumroad.com/l/onyxiq">Get Prime — $49 one-time</a>
+  </div>
+
+  <h2>What the comparison shows</h2>
+  <ul>
+    <li><b>Upload cadence.</b> Videos per week or month, and how steady it is. Sporadic brilliance usually loses to reliable rhythm — the comparison shows you the rhythm that wins in your niche.</li>
+    <li><b>Typical performance.</b> Average and median views per video — the honest “what does a normal upload earn them?”, stripped of one viral outlier.</li>
+    <li><b>Breakout videos.</b> The uploads that did several times the channel's average, lined up so you can study what they share: topic angle, title construction, length, timing.</li>
+    <li><b>Title patterns.</b> How the channel phrases titles — questions vs. statements, numbers, brackets, keyword placement — the packaging habits behind the clicks.</li>
+    <li><b>Catalogue shape.</b> How much of their library is search-driven evergreen versus trend-chasing — and where the unserved gaps in the niche are hiding.</li>
+  </ul>
+
+  <h2>How to use it without fooling yourself</h2>
+  <ol>
+    <li><b>Pick the right rival.</b> Compare yourself with the channel one step ahead — close enough that their playbook fits your resources — and glance at the niche leader only for direction.</li>
+    <li><b>Compare like with like.</b> A channel with ten times your subscribers <em>should</em> average more views. Judge the patterns (cadence, per-video packaging, breakout rate), not just the raw totals.</li>
+    <li><b>Extract decisions, not envy.</b> Turn each difference into an experiment: “Their winners all answer one specific question — I'll test that format twice this month.”</li>
+    <li><b>Feed it forward.</b> Take the topics their audience proved it wants into <a href="../youtube-keyword-tool/">Keyword Lab</a>, check the scores, and make your own version — better aimed, in your voice. Then audit your result with <a href="../youtube-video-audit/">Video X-Ray</a>.</li>
+  </ol>
+  <p>Competitor analysis pairs naturally with a <a href="../youtube-channel-audit/">channel audit</a>: the audit tells you where <em>you</em> leak; the comparison tells you what “fixed” looks like in your specific niche. See both working together in the launch video, <a href="https://www.youtube.com/watch?v=OnU2HO_yAcQ">“Stop Paying for TubeBuddy — I Found a Free Alternative (Full Audit)”</a>.</p>
+
+  <div class="note">
+    <h2 style="margin-top:0">Good to know (honest limits)</h2>
+    <ul>
+      <li>Competitor Compare uses <b>public data only</b>. A rival's revenue, retention curves, CTR and traffic sources are visible only to that channel's owner — any tool claiming to show them is guessing or worse.</li>
+      <li>Averages hide stories: a channel propped up by one viral video looks stronger than it is. That's why the comparison includes medians and breakout analysis, not just averages.</li>
+      <li>Patterns are evidence, not instructions. What worked for their audience, budget and back catalogue may not transfer wholesale — test, don't transplant.</li>
+      <li>Everything runs through the official API on your own free access: API key (your own Google project) or Google sign-in (OnyxIQ project — Google verification in progress).</li>
+    </ul>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item">
+    <h3 class="faq-q">What can competitor analysis actually tell me?</h3>
+    <p class="faq-a">The public mechanics of a channel's success: how often they upload, what an average video earns them, which videos broke out and what those videos have in common — topics, title constructions, lengths — and where the gaps are that nobody in the niche is serving. It turns “they're just better” into a list of observable choices.</p>
+  </div>
+  <div class="faq-item">
+    <h3 class="faq-q">Which channels should I compare?</h3>
+    <p class="faq-a">Two kinds: channels one step ahead of you in your niche (close enough that their playbook is realistic for you) and the niche leader (to see where the ceiling is). Comparing yourself only with the biggest channel in the niche mostly produces despair, not decisions.</p>
+  </div>
+  <div class="faq-item">
+    <h3 class="faq-q">Is this just copying competitors?</h3>
+    <p class="faq-a">No — and it shouldn't become that. Analysis shows you the patterns a niche rewards: the questions viewers want answered, the title shapes that earn clicks, the cadence that sustains growth. You still make your own videos with your own voice. Borrow the map, not the territory.</p>
+  </div>
+  <div class="faq-item">
+    <h3 class="faq-q">What data does Competitor Compare use?</h3>
+    <p class="faq-a">Public channel and video data from the official YouTube Data API v3 — uploads, view counts, titles, publish dates. Private numbers (a rival's revenue, retention, traffic sources) are not public and no legitimate tool can show them to you.</p>
+  </div>
+
+  <div class="cta">
+    <p><b>The channel ahead of you is running a playbook.</b> Read it — free to start, yours to keep.</p>
+    <a class="btn btn-gold" href="https://onyxailabs.gumroad.com/l/onyxiq-basic">Start free — OnyxIQ Basic</a>
+    <a class="btn btn-ghost" href="https://onyxailabs.gumroad.com/l/onyxiq">Get Prime — $49 one-time</a>
+  </div>
+</main>
+</div>
+<footer>
+  <div class="footer-in"><b style="color:var(--gold)">OnyxIQ</b> · Onyx AI Labs — built by Muhammad Mohsin of the Onyx AI YouTube channel. OnyxIQ is an independent tool and is not affiliated with YouTube, Google, TubeBuddy or vidIQ. · <a href="../../onyxiq-privacy.html">Privacy policy</a></div>
+  <nav class="site-nav" aria-label="OnyxIQ guides">
+    <div style="font-weight:700;color:var(--ink)">Explore OnyxIQ</div>
+    <ul>
+      <li><a href="../">OnyxIQ — YouTube Growth Studio</a> — the full studio, free Basic and one-time Prime.</li>
+      <li><a href="../tubebuddy-alternative/">TubeBuddy Alternative</a> — the same core jobs, without the monthly rent.</li>
+      <li><a href="../vidiq-alternative/">vidIQ Alternative</a> — audits and keyword research you pay for once.</li>
+      <li><a href="../youtube-channel-audit/">YouTube Channel Audit</a> — Channel X-Ray: a full audit with a health score.</li>
+      <li><a href="../youtube-video-audit/">YouTube Video Audit</a> — Video X-Ray: check every video before and after upload.</li>
+      <li><a href="../youtube-keyword-tool/">YouTube Keyword Tool</a> — Keyword Lab: demand and competition scores.</li>
+      <li><a href="./">YouTube Competitor Analysis</a> — Competitor Compare: two channels, side by side.</li>
+      <li><a href="../thumbnail-tester/">YouTube Thumbnail Tester</a> — Feed-Test: your thumbnail against the real top rivals.</li>
+    </ul>
+  </nav>
+</footer>
+</body>
+</html>
