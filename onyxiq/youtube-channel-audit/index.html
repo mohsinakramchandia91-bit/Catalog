@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free YouTube Channel Audit Tool — Full Channel X-Ray</title>
+<meta name="description" content="Run a full YouTube channel audit with a health score: upload consistency, top and weak videos, title and keyword patterns — from the official YouTube API, with your own free access. Start free with OnyxIQ Basic.">
+<link rel="canonical" href="https://onyxailabs.github.io/Catalog/onyxiq/youtube-channel-audit/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="OnyxIQ">
+<meta property="og:title" content="YouTube Channel Audit — Channel X-Ray by OnyxIQ">
+<meta property="og:description" content="A full audit of your channel with a health score and the findings behind it. Official API data, your own sign-in, no subscription.">
+<meta property="og:url" content="https://onyxailabs.github.io/Catalog/onyxiq/youtube-channel-audit/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="YouTube Channel Audit — Channel X-Ray by OnyxIQ">
+<meta name="twitter:description" content="Health score, consistency check, best and weakest videos, keyword patterns — a channel audit that explains itself. Start free.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect x='12' y='12' width='24' height='24' rx='3' transform='rotate(45 24 24)' fill='none' stroke='%23e3a008' stroke-width='4'/%3E%3Crect x='19' y='19' width='10' height='10' rx='1.5' transform='rotate(45 24 24)' fill='%23e3a008'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0a0e13">
+<style>
+:root{--bg:#0a0e13;--panel:#12171f;--ink:#ece9e2;--muted:#9aa4ae;--gold:#e3a008;--gold2:#f6c453;--line:#242c38}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+a{color:var(--gold2)}
+.wrap{max-width:880px;margin:0 auto;padding:0 20px 10px}
+header{border-bottom:1px solid var(--line)}
+.header-in{max-width:880px;margin:0 auto;padding:16px 20px;display:flex;align-items:center;gap:12px}
+.brand{text-decoration:none;color:var(--ink);display:flex;align-items:center;gap:10px}
+.brand .mark{width:34px;height:34px;flex:none}
+.brand-name{font-weight:800;font-size:21px;letter-spacing:.4px;line-height:1.15}
+.brand-name span{color:var(--gold)}
+.brand small{display:block;color:var(--muted);font-size:11.5px;font-weight:400}
+.pill{margin-left:auto;color:var(--muted);font-size:12.5px;border:1px solid var(--line);border-radius:999px;padding:5px 12px;white-space:nowrap}
+.breadcrumb{font-size:13px;color:var(--muted);margin:18px 0 10px}
+.breadcrumb a{color:var(--muted)}
+h1{font-size:33px;line-height:1.2;margin:6px 0 12px}
+.lede{font-size:18px;color:#cfd4da;margin:0 0 8px}
+h2{font-size:23px;margin:34px 0 10px}
+h2 .gold,.gold{color:var(--gold)}
+p{margin:10px 0}
+ul,ol{margin:10px 0;padding-left:22px}
+li{margin:6px 0}
+.cta{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:18px 20px;margin:26px 0}
+.cta p{margin:4px 0 12px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:8px;padding:11px 20px;margin:4px 10px 4px 0}
+.btn-gold{background:var(--gold);color:#161006}
+.btn-ghost{border:1px solid var(--gold);color:var(--gold2)}
+.faq-item{border-top:1px solid var(--line);padding:12px 0}
+.faq-q{font-size:17px;margin:0 0 4px}
+.faq-a{color:#cfd4da;margin:0}
+.note{background:#171208;border:1px solid #3a2c07;border-radius:10px;padding:14px 18px;margin:22px 0}
+footer{border-top:1px solid var(--line);margin-top:44px}
+.footer-in{max-width:880px;margin:0 auto;padding:22px 20px 4px;color:var(--muted);font-size:14px}
+.site-nav{max-width:880px;margin:0 auto;padding:6px 20px 30px}
+.site-nav ul{list-style:none;padding:0;margin:8px 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:4px 18px}
+.site-nav li{margin:3px 0;font-size:14.5px}
+@media(max-width:560px){h1{font-size:27px}.pill{display:none}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "FAQPage",
+      "@id": "https://onyxailabs.github.io/Catalog/onyxiq/youtube-channel-audit/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does a YouTube channel audit actually check?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Channel X-Ray reviews your upload consistency and cadence, how your recent videos perform against your own average, which topics and title patterns earn views, whether your titles target searchable keywords, and how your catalogue is balanced — then distils it into a health score with the findings listed underneath." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the channel audit free?",
+          "acceptedAnswer": { "@type": "Answer", "text": "You can start with OnyxIQ Basic, which is free forever. Prime — $49 once, no subscription — unlocks the full studio. Both run on your own free YouTube API access." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the audit need access to my channel?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It reads channel data through the official YouTube Data API v3 and YouTube Analytics using your own Google sign-in or your own API key. Your password is never asked for, and nothing is uploaded to an OnyxIQ server — there isn't one." }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I audit my channel?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Monthly is a good rhythm for most creators, and again after any deliberate change — a new format, a new schedule, a new niche direction — so you can see whether the change actually moved the numbers." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "OnyxIQ", "item": "https://onyxailabs.github.io/Catalog/onyxiq/" },
+        { "@type": "ListItem", "position": 2, "name": "YouTube Channel Audit", "item": "https://onyxailabs.github.io/Catalog/onyxiq/youtube-channel-audit/" }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header>
+  <div class="header-in">
+    <a class="brand" href="../">
+      <svg class="mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="11" y="11" width="26" height="26" rx="3.5" transform="rotate(45 24 24)" stroke="#e3a008" stroke-width="3.4"/><rect x="18.5" y="18.5" width="11" height="11" rx="1.6" transform="rotate(45 24 24)" fill="#e3a008"/></svg>
+      <div><div class="brand-name">ONYX<span>IQ</span></div><small>by Onyx AI Labs</small></div>
+    </a>
+    <span class="pill">Pay once · No subscription</span>
+  </div>
+</header>
+<div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">OnyxIQ</a> › <span aria-current="page">YouTube Channel Audit</span></nav>
+<main>
+  <h1>YouTube Channel Audit: <span class="gold">X-Ray Your Whole Channel</span></h1>
+  <p class="lede">Most channels don't have a talent problem — they have a leaks problem: a broken upload rhythm, titles aimed at nobody, a back catalogue quietly teaching the algorithm the wrong lesson. A channel audit finds the leaks. OnyxIQ's Channel X-Ray pulls your channel's real data through the official YouTube APIs and hands you a health score <em>with the evidence underneath it</em>.</p>
+
+  <div class="cta">
+    <p><b>Audit your channel free</b> — OnyxIQ Basic is free forever. Prime ($49 once) unlocks the full studio around the audit.</p>
+    <a class="btn btn-gold" href="https://onyxailabs.gumroad.com/l/onyxiq-basic">Start free — OnyxIQ Basic</a>
+    <a class="btn btn-ghost" href="https://onyxailabs.gumroad.com/l/onyxiq">Get Prime — $49 one-time</a>
+  </div>
+
+  <h2>What the audit examines</h2>
+  <ul>
+    <li><b>Upload consistency and cadence.</b> Gaps, bursts and silent months — the rhythm YouTube and your subscribers actually experience, measured instead of remembered.</li>
+    <li><b>Recent performance vs. your own baseline.</b> Not vanity totals: whether your latest videos beat, match or trail what your channel normally does.</li>
+    <li><b>Winners and drag.</b> Your strongest videos and your weakest, side by side — because the gap between them is usually a pattern (topic, title style, length), not luck.</li>
+    <li><b>Title and keyword patterns.</b> Whether your titles target phrases people actually search, or are written only for existing subscribers.</li>
+    <li><b>Catalogue balance.</b> How much of your library works for discovery (search and suggested) versus how much only serves people who already found you.</li>
+  </ul>
+  <p>All of it rolls up into one <b>health score</b> — and unlike a bare number, the score ships with the findings that produced it, in the order you should fix them.</p>
+
+  <h2>How to run your audit</h2>
+  <ol>
+    <li><b>Connect.</b> Open OnyxIQ and sign in with your own Google account, or paste your own free YouTube Data API key. The audit runs on the official YouTube Data API v3 and YouTube Analytics — no scraping, no password sharing.</li>
+    <li><b>Run Channel X-Ray.</b> Point it at your channel and let it read your uploads, titles and performance data.</li>
+    <li><b>Read the findings, not just the score.</b> Work from the top: the audit ranks what's costing you the most views.</li>
+    <li><b>Fix, publish, re-audit.</b> Change one thing at a time — cadence, title style, topic focus — then re-run the audit next month and see whether the score (and the views) moved.</li>
+  </ol>
+  <p>An audit is only the diagnosis. Pair it with <a href="../youtube-keyword-tool/">Keyword Lab</a> to choose what to make next, <a href="../youtube-video-audit/">Video X-Ray</a> to check each upload, and <a href="../youtube-competitor-analysis/">Competitor Compare</a> to see what healthy channels in your niche do differently. Watch a real audit run in the launch video: <a href="https://www.youtube.com/watch?v=OnU2HO_yAcQ">“Stop Paying for TubeBuddy — I Found a Free Alternative (Full Audit)”</a>.</p>
+
+  <div class="note">
+    <h2 style="margin-top:0">Good to know (honest limits)</h2>
+    <ul>
+      <li>The health score is a <b>guide built from your channel's public and account API data</b> — it summarises patterns; it is not YouTube's internal judgement of your channel, and no tool outside YouTube can show you that.</li>
+      <li>An audit can't fix a channel by itself. It tells you where the leaks are; plugging them is still your next few uploads.</li>
+      <li>Very new or very small channels have thin data — the audit will say so rather than inventing precision.</li>
+      <li>Your data is processed on your machine through your own access. Connect with your own API key (entirely your own Google project) or Google sign-in (through the OnyxIQ project, whose Google verification is being completed).</li>
+    </ul>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item">
+    <h3 class="faq-q">What does a YouTube channel audit actually check?</h3>
+    <p class="faq-a">Channel X-Ray reviews your upload consistency and cadence, how your recent videos perform against your own average, which topics and title patterns earn views, whether your titles target searchable keywords, and how your catalogue is balanced — then distils it into a health score with the findings listed underneath.</p>
+  </div>
+  <div class="faq-item">
+    <h3 class="faq-q">Is the channel audit free?</h3>
+    <p class="faq-a">You can start with OnyxIQ Basic, which is free forever. Prime — $49 once, no subscription — unlocks the full studio. Both run on your own free YouTube API access.</p>
+  </div>
+  <div class="faq-item">
+    <h3 class="faq-q">Does the audit need access to my channel?</h3>
+    <p class="faq-a">It reads channel data through the official YouTube Data API v3 and YouTube Analytics using your own Google sign-in or your own API key. Your password is never asked for, and nothing is uploaded to an OnyxIQ server — there isn't one.</p>
+  </div>
+  <div class="faq-item">
+    <h3 class="faq-q">How often should I audit my channel?</h3>
+    <p class="faq-a">Monthly is a good rhythm for most creators, and again after any deliberate change — a new format, a new schedule, a new niche direction — so you can see whether the change actually moved the numbers.</p>
+  </div>
+
+  <div class="cta">
+    <p><b>Know your number — and what to do about it.</b> Run your first Channel X-Ray free today.</p>
+    <a class="btn btn-gold" href="https://onyxailabs.gumroad.com/l/onyxiq-basic">Start free — OnyxIQ Basic</a>
+    <a class="btn btn-ghost" href="https://onyxailabs.gumroad.com/l/onyxiq">Get Prime — $49 one-time</a>
+  </div>
+</main>
+</div>
+<footer>
+  <div class="footer-in"><b style="color:var(--gold)">OnyxIQ</b> · Onyx AI Labs — built by Muhammad Mohsin of the Onyx AI YouTube channel. OnyxIQ is an independent tool and is not affiliated with YouTube, Google, TubeBuddy or vidIQ. · <a href="../../onyxiq-privacy.html">Privacy policy</a></div>
+  <nav class="site-nav" aria-label="OnyxIQ guides">
+    <div style="font-weight:700;color:var(--ink)">Explore OnyxIQ</div>
+    <ul>
+      <li><a href="../">OnyxIQ — YouTube Growth Studio</a> — the full studio, free Basic and one-time Prime.</li>
+      <li><a href="../tubebuddy-alternative/">TubeBuddy Alternative</a> — the same core jobs, without the monthly rent.</li>
+      <li><a href="../vidiq-alternative/">vidIQ Alternative</a> — audits and keyword research you pay for once.</li>
+      <li><a href="./">YouTube Channel Audit</a> — Channel X-Ray: a full audit with a health score.</li>
+      <li><a href="../youtube-video-audit/">YouTube Video Audit</a> — Video X-Ray: check every video before and after upload.</li>
+      <li><a href="../youtube-keyword-tool/">YouTube Keyword Tool</a> — Keyword Lab: demand and competition scores.</li>
+      <li><a href="../youtube-competitor-analysis/">YouTube Competitor Analysis</a> — Competitor Compare: two channels, side by side.</li>
+      <li><a href="../thumbnail-tester/">YouTube Thumbnail Tester</a> — Feed-Test: your thumbnail against the real top rivals.</li>
+    </ul>
+  </nav>
+</footer>
+</body>
+</html>
